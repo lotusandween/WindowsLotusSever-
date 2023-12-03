@@ -31,8 +31,8 @@ jobs:
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
         Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
-        copy wallpaper.png D:\a\wallpaper.png
-        copy wallpaper.bat D:\a\wallpaper.bat
+        copy LotusSever.png D:\a\LotusSever.png
+        copy LotusSever.bat D:\a\LotusSever.bat
         copy Node.js.lnk C:\Users\Public\Desktop\Node.js.lnk
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
     - name: Make Tunnel.
